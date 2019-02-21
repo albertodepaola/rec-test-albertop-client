@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
-
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +24,7 @@ import { ConnectionsComponent } from './connections/connections.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     BsDropdownModule.forRoot()
   ],
   providers: [],
