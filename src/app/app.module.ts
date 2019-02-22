@@ -1,13 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ConnectionsComponent } from './connections/connections.component';
@@ -16,7 +16,6 @@ import { ConnectionsComponent } from './connections/connections.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent,
     SearchComponent,
     ProfileComponent,
     ConnectionsComponent
@@ -25,6 +24,7 @@ import { ConnectionsComponent } from './connections/connections.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
     BsDropdownModule.forRoot()
   ],
   providers: [],

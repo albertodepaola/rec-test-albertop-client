@@ -4,8 +4,9 @@ import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path: '', component: HomeComponent},
+  {path: 'home', component: SearchComponent},
+  {path: '', component: SearchComponent},
+  {path: 'torreApp', component: SearchComponent},
   {path: 'search', component: SearchComponent}
 ];
 
