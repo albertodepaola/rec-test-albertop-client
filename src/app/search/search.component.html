@@ -20,7 +20,7 @@
 </header>
 <section id="results" class="container">
     <ul *ngIf="users">
-        <li *ngFor="let user of users" >
+        <li *ngFor="let user of users" style="cursor: pointer;" routerLink="/profile/{{user.publicId}}">
           <img [src]="user.picture">
           <p>
             {{ user.name }} 
